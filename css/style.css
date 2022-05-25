@@ -1,0 +1,40 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 87%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: 30%;
+  height: 250px;
+  background-color: red;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 740px) {
+  .col {
+    background-color: blue !important; /* приоритетность */
+    width: 100% !important;
+  }
+
+  .block{
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .col {
+    background-color: pink;
+    border-radius: 20px;
+    width: 45%;
+  }
+}
+
